@@ -12,15 +12,6 @@ $(".datepicker").datepicker({
             $(".search").val(dateText);
         }
 });
-// const endpoint = 'filename.js';
-// fetch(endpoint)
-//     .then(blob => blob.json())
-//     .then(people => people.map(elem => {
-//                      elem.dateOfBirth = leading0(elem.dateOfBirth);
-//                      return elem;
-//    });
-
-
   var people = [];
   fetch('sluzba.json')
     .then(blob => blob.json())
