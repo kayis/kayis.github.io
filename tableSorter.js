@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var	$table,
 $n,
 $pageCount,
@@ -128,4 +127,3 @@ function pageButtons($pCount,$cur) {
 	return $buttons;
 	} else {return "";}
 };
->>>>>>> b1c3c5132aa46fa3fe0b749485829761705d9b1f

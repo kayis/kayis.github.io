@@ -21,7 +21,7 @@ $(".datepicker").datepicker({
 //    });
 
 
-  const endpoint = 'sluzba.json';
+  const endpoint = 'https://api.myjson.com/bins/agowj';
   var people = [];
   fetch(endpoint)
     .then(blob => blob.json())
@@ -33,7 +33,7 @@ $(".datepicker").datepicker({
     }))
 
 setTimeout(function(){ displayMatches(); }, 450);
-setTimeout(function(){ sortTable("table1"); }, 500);
+setTimeout(function(){ sortTable("table1"); }, 600);
 
   function findMatches(wordToMatch, people) {
 
