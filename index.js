@@ -12,6 +12,7 @@ $(".datepicker").datepicker({
             $(".search").val(dateText);
         }
 });
+var people = [];
 fetch('sluzba.json')
   .then(blob => blob.json())
   .then(data => people.push(...data))
@@ -20,6 +21,7 @@ fetch('sluzba.json')
     return elem.dateOfBirth = leading0(elem.dateOfBirth);
 
   }))
+
 
 setTimeout(function(){ displayMatches(); }, 450);
 setTimeout(function(){ sortTable("table1"); }, 500);
