@@ -21,7 +21,7 @@ $(".datepicker").datepicker({
 //    });
 
 
-  const endpoint = 'https://api.myjson.com/bins/agowj';
+  const endpoint = 'sluzba.json';
   var people = [];
   fetch(endpoint)
     .then(blob => blob.json())
